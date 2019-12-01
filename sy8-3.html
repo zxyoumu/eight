@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8-3</title>
+	<style>
+		html,body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#container{
+			position: relative;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		#top{
+			height: 100px;
+			background: #7B03A9;
+			width: 100%;
+			position: absolute;
+			z-index: 5;
+			top: 0;
+			text-align: center;
+		}
+		#middle{
+			background: #680;
+			width: 100%;
+			overflow: auto;
+			top: 100px;
+			position: absolute;
+			z-index: 10;
+			bottom: 100px;
+			text-align: center;
+		}
+
+		#bottom{
+			height: 100px;
+			background: #7B03A9;
+			width: 100%;
+			position: absolute;
+			z-index: 200;
+			bottom: 0;
+			text-align: center;
+		}
+		.qw{
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="top">top</div>
+		<div id="middle">
+			<div class="qw">middle</div>		
+		</div>
+		<div id="bottom">bottom</div>
+	</div>
+</body>
+</html>
+
